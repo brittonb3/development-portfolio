@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ html body {
+   box-sizing: border-box;
+ }
+
+
+/***  Main page wrapper   ***/
+.wrapper {
+  min-height: calc(100vh - 30px);
+}
+
+
+ /***********   The main navigation style for the app Mobile first  ***********/
+/***   Nav page links style   ***/
+.main-nav {
+  border-bottom: solid yellow;
+  background-color: maroon;
+  height: 3em;
+}
+
+.main-nav-pages {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.main-nav-pages li, .main-nav-social li {
+  display: inline-block;
+  margin: 0;
+  background-color: green;
+  padding: 0.8em;
+}
+
+.main-nav-pages li a, .main-nav-social li a{
+  text-decoration: none;
+  color: white;
+}
+
+/***   Nav Social medai links style   ***/
+.main-nav-social {
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+/***    The footer style Mobile first ***/
+#main-footer {
+  font-size: 10px;
+  text-align: center;
+}
