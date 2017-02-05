@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'portfolio/portfolio'
+  get 'portfolio/main'
 
   get 'welcome/index'
 

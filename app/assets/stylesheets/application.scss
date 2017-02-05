@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
  html body {
    box-sizing: border-box;
  }
@@ -24,40 +28,39 @@
 }
 
 
+
  /***********   The main navigation style for the app Mobile first  ***********/
 /***   Nav page links style   ***/
 .main-nav {
   border-bottom: solid yellow;
   background-color: maroon;
   height: 3em;
+  text-align: center;
 }
 
 .main-nav-pages {
   margin: 0;
   padding: 0;
-  float: left;
-  width: 100%;
-  height: 100%;
 }
 
-.main-nav-pages li, .main-nav-social li {
+.main-nav-pages li {
   display: inline-block;
-  margin: 0;
-  background-color: green;
-  padding: 0.8em;
+  margin-top: 15px;
 }
 
-.main-nav-pages li a, .main-nav-social li a{
+.main-nav-pages a {
   text-decoration: none;
   color: white;
+  padding: 10px 15px;
+  text-align: center;
 }
 
-/***   Nav Social medai links style   ***/
-.main-nav-social {
-  float: right;
-  margin: 0;
-  padding: 0;
-  display: none;
+.main-nav-pages a:hover  {
+  opacity: 0.5;
+}
+
+.main-nav-pages a.active {
+  opacity: 0.5;
 }
 
 /***    The footer style Mobile first ***/

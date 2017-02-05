@@ -1,4 +1,8 @@
 class PortfolioController < ApplicationController
-  def portfolio
+  def main
+  end
+
+  def tetris
+
   end
 end
